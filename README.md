@@ -11,9 +11,9 @@
 
 ### Тестовые Задания
 
-[Frontend](https://github.com/idDemonov/test-task-for-cryptorank/blob/main/frontend.md)
+[Frontend](https://github.com/CryptoRank/test-tasks/blob/main/frontend.md)
 
-[Backend](https://github.com/idDemonov/test-task-for-cryptorank/blob/main/backend.md)
+[Backend](https://github.com/CryptoRank/test-tasks/blob/main/backend.md)
 
 ### Контакты
 
