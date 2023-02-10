@@ -46,4 +46,4 @@ https://api.cryptorank.io/v1/currencies/1?api_key=YOUR_API_KEY
 * [React](https://ru.reactjs.org/)
 * [Next.js](https://nextjs.org/)
 * [styled-components](https://styled-components.com/)
-* [SWR](https://swr.vercel.app/) или [Redux](https://redux.js.org/)
+* [SWR](https://swr.vercel.app/)
