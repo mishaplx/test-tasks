@@ -17,11 +17,13 @@
 
 ### Контакты
 
-Rustam, TeamLead   
-Telegram: https://t.me/Rompu
 
-Freddie Matias, CEO   
-Telegram: https://t.me/FreddyMat
+
+Alisa, TeamLead   
+Telegram: https://t.me/pavlova_alisa
+
+Rustam, CTO      
+Telegram: https://t.me/rompu
 
 ---
 
