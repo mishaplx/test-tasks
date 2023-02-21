@@ -12,11 +12,12 @@ ATH (All Time High) – это самое высокое значение цен
 Вам нужно высчитать From ATH - на сколько цена монеты упала в процентном соотношении  
 и To ATH - на сколько цене монеты нужно вырасти в процентном соотношении, чтобы догнать ATH  
 
-Запросите данные по биткойну, цену вы найдёте в объекте price, а текущий ATH в объекте athPrice   
-Используйте цену в USD
+Функцию расчета покрыть тестами.    
 
-API для запроса данных по биткойну  
-https://tstapi.cryptorank.io/v0/coins/bitcoin
+API для запроса данных по BTC  
+https://tstapi.cryptorank.io/v0/coins/bitcoin    
+_Цену вы найдёте в объекте price, а текущий ATH в объекте athPrice   
+Используйте цену в USD_
 
 ---
 
@@ -27,7 +28,8 @@ https://tstapi.cryptorank.io/v0/coins/bitcoin
 Пример: https://cryptorank.io/converter
 2. Текущие курсы криптовалют.  
 На странице пользователь видит таблицу с колонками Name, Price USD, Circulating Supply, Market Cap, Category   
-Пример: https://cryptorank.io/watchlist/9a31a11dfe4b
+Пример: https://cryptorank.io/watchlist/9a31a11dfe4b    
+**Добавить дополнительные колонки From ATH и To ATH используя функцию из п.2**
 
 API для запроса списка криптовалют  
 https://api.cryptorank.io/v1/currencies/1?api_key=YOUR_API_KEY   
@@ -37,9 +39,12 @@ https://api.cryptorank.io/v1/currencies/1?api_key=YOUR_API_KEY
 ---
 
 **Плюсом будет:**
-* Хорошо продуманный интерфейс и внешний вид
+* Хорошая оптимизация по Pagespeed/Lighthouse
 * Тесты ([Jest](https://jestjs.io/ru/))
-* На второй странице можно реализовать функционал отображения Price в выбранной пользователем валюте
+* Грамотная настройка конфигов проекта
+
+В первую очередь мы смотрим на код и реализацию, а не на UI. Дизайнеры у нас есть =)    
+Например нам интересно, как вы реализуете функцию из п.2 и обработаете момент с потерей точности    
 
 **Для реализации используйте:**
 * [TypeScript](https://www.typescriptlang.org/)
