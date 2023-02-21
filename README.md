@@ -17,7 +17,8 @@
 
 ### Контакты
 
-
+Egor, IT Recruiter   
+Telegram: https://t.me/ivin_egor_it
 
 Alisa, TeamLead   
 Telegram: https://t.me/pavlova_alisa
@@ -28,6 +29,6 @@ Telegram: https://t.me/rompu
 ---
 
 P.S.
-> Если есть вопросы по тестовому, пишите в Telegram.   
+> Если есть вопросы по тестовому, пишите TeamLead в Telegram.   
 > 
 > Большим плюсом будет, покрытие своего кода тестами
