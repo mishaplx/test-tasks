@@ -82,7 +82,8 @@ https://tstapi.cryptorank.io/v0/coins/prices/
 **Для реализации используйте:**
 - [Nest.js](https://nestjs.com/)
 - [TypeScript](https://www.typescriptlang.org/)  
-- Типизация без использования `any` и `unknown` - обязательна
+- Типизация без использования `any` - обязательна
+- [class-validator](https://www.npmjs.com/package/class-validator) - для query параметров
 - По возможности не используйте примитивы, создавайте константы и enum/ы
 - [Jest](https://jestjs.io/ru/)
 - Библиотеки на ваше усмотрение(С расчетом на то, что вы бы использовали их в продакшене)
