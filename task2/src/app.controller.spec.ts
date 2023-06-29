@@ -13,10 +13,18 @@ describe('AppController', () => {
 
     appController = app.get<AppController>(AppController);
   });
+  const  queryParam = {
+    from:'bitcoin',to:'lisk',amount:10000000000000000000000000000000000000000000000
+  }
+  describe('bitcoin/lisk', () => {
+    it('not Infinity ', async () => {
 
-  describe('root', () => {
-    it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
+      const data = await appController.convertCurrency(queryParam)
+    expect(String(data.result)).not.toEqual("Infinity");
+    });
+    it('not NaN ', async () => {
+      const data = await appController.convertCurrency(queryParam)
+      expect(data.result).not.toEqual("NaN");
     });
   });
 });

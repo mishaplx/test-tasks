@@ -40,6 +40,8 @@ export class AppService {
     return response.data.data;
   }
   convert( fromPrice:number,   toPrice:number,  amount: number){
+
+    console.log(Number(amount) ,"amount")
     const value = fromPrice * amount / toPrice
     if(!isFinite(value)){
       const decimalfromPrice = new Decimal(fromPrice);
@@ -47,6 +49,7 @@ export class AppService {
       const decimaltoPrice = new Decimal(toPrice);
 
       const result = decimalfromPrice.times(decimalamount).dividedBy(decimaltoPrice);
+      console.log(result.toString(),'result.toString()')
       return result.toString()
     }
     return value.toFixed(20) ;

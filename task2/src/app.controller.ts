@@ -1,5 +1,6 @@
 import { Controller, Get, Query } from '@nestjs/common';
 import { AppService } from './app.service';
+import {propertyDTO} from "./property.dto";
 
 @Controller('currency')
 export class AppController {
@@ -7,10 +8,8 @@ export class AppController {
 
   @Get('convert')
   convertCurrency(
-      @Query('from') from: string,
-      @Query('to') to: string = 'tether',
-      @Query('amount') amount: number = 1,
-  ): any {
-    return this.appService.convertCurrency(from, to, amount);
+      @Query() queryParams: propertyDTO
+  ): Promise<propertyDTO> {
+    return  this.appService.convertCurrency(queryParams.from, queryParams.to = 'tether', queryParams.amount = 1);
   }
 }
