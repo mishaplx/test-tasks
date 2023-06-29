@@ -1,14 +1,11 @@
-type IconAvailable = { [key: string]: number }
+type IconAvailable = { [key: string]: number };
 function checkCoins(
   coinAvailable: { [key: string]: number },
-  participantsRequested: string[]
+  participantsRequested: string[],
 ): string[][] | null {
   const results: string[][] = [];
 
-  function backtrack(
-    index: number,
-    distribution: string[]
-  ): void {
+  function backtrack(index: number, distribution: string[]): void {
     if (index === participantsRequested.length) {
       results.push([...distribution]);
       return;
@@ -28,22 +25,27 @@ function checkCoins(
   }
 
   backtrack(0, []);
-    if(!results.length){
-        console.log('невозможно распределить монеты!')
-        return null
-    }
+  if (!results.length) {
+    console.log('невозможно распределить монеты!');
+    return null;
+  }
   return results;
 }
 
 // Пример использования
 
-
-
-
-const coinAvailable:IconAvailable ={ ETH: 4, TRON: 5, MATIC: 1 };
-const participantsRequested:string[] = ["ETH", "ETH", "ETH/TRON", "TRON/ETH", "TRON/MATIC", "TRON", "MATIC"];
+const coinAvailable: IconAvailable = { ETH: 4, TRON: 5, MATIC: 1 };
+const participantsRequested: string[] = [
+  'ETH',
+  'ETH',
+  'ETH/TRON',
+  'TRON/ETH',
+  'TRON/MATIC',
+  'TRON',
+  'MATIC',
+];
 const result: string[][] | null = checkCoins(
   coinAvailable,
-  participantsRequested
+  participantsRequested,
 );
 console.log(result);
