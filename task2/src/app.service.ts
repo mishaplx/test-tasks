@@ -6,6 +6,7 @@ interface objCash {
   price: number,
   volume: number
 }
+
 @Injectable()
 export class AppService {
   async convertCurrency(
