@@ -14,7 +14,7 @@ function checkCoins(
       return;
     }
 
-    const coins = participantsRequested[index].split('/');
+    const coins: string[] = participantsRequested[index].split('/');
 
     for (const coin of coins) {
       if (coinAvailable[coin] > 0) {
